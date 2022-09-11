@@ -95,7 +95,7 @@ a{
     background-image: url("../img/background.webp");
 }
 
-.main div{
+.personcaixa{
     display: flex;
     margin-top: 20px;
 }
@@ -109,11 +109,10 @@ a{
     background-repeat: no-repeat;
     font-size: 30px;
     text-align: center;
-    margin: 0px auto auto;
+    margin: 20px auto auto;
     cursor: default;
 
 }
-
 
 .caixa{
     width: 600px;
@@ -123,13 +122,14 @@ a{
     background-size: 600px 300px;
     background-repeat: no-repeat;
     margin: 20px auto auto;
+    display: flex;
 }
 
 /*Conteúdo de texto que fica dentro da caixa*/
 .text{
     width: 550px;
     height: 250px;
-    margin: 30px auto auto;
+    margin: 25px auto auto;
     text-align: left;
     overflow: hidden scroll;
     cursor: default;
@@ -181,4 +181,45 @@ a{
     background-size: 100% 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+}
+
+.infos{
+    width: 260px;
+    height: 460px;
+    margin: 20px auto auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.infos img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 55px;
+}
+
+.nomes{
+    width: 120px;
+    height: 21px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px auto auto;
+    margin-bottom: 20px;
+}
+
+.infos::-webkit-scrollbar{
+    width: 10px;
+}
+
+.infos::-webkit-scrollbar-thumb{
+    background-image: url(../img/borda.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
