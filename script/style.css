@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+/*Corpo do site*/
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    overflow-x: hidden;
+}
+
+/*Rolagem do site*/
+body::-webkit-scrollbar{
+    width: 10px;
+    background-image: url(../img/background.webp);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-image: url(../img/borda.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+
+/*Imagem da logo*/
+#logo{
+    width: 100px;
+    height: 100%;
+    border: none;
+    transition: .3s;
+}
+
+#logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*Imagens*/
+
+/*Cabeçalho*/
+.head{
+    grid-area: header;
+    background-image: url("../img/montanha2.png");
+    display: flex;
+    justify-content: space-between;
+    background-size: 100% 100%;
+}
+
+.head nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 550px;
+    position: static;
+}
+
+/*Botoes do cabeçalho*/
+.botoes{
+    background-image: url("../img/botoes.png");
+    border: 1px solid black;
+    width: 120px;
+    text-align: center;
+    padding-top: 2px;
+    background-size: 120px 50px;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    transition: .3s;
+    margin-left: 5px;
+    font-size: 13px;
+    height: 20px;
+}
+
+.botoes:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Funcionamento dos links em geral*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Centro do site*/
+.main{
+    grid-area: main;
+    background-image: url("../img/background.webp");
+}
+
+.personcaixa{
+    display: flex;
+    margin-top: 20px;
+}
+
+/*h1*/
+.titulos{
+    background-image: url("../img/FundoDeTxt.png");
+    width: 130px;
+    height: 40px;
+    background-size: 130px 40px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px auto auto;
+    cursor: default;
+
+}
+
+.caixa{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    background-image: url("../img/caixa.png");
+    background-size: 600px 300px;
+    background-repeat: no-repeat;
+    margin: 20px auto auto;
+    display: flex;
+}
+
+/*Conteúdo de texto que fica dentro da caixa*/
+.text{
+    width: 550px;
+    height: 250px;
+    margin: 25px auto auto;
+    text-align: left;
+    overflow: hidden scroll;
+    cursor: default;
+}
+
+/*Rolagem do texto da caixa*/
+.text::-webkit-scrollbar{
+    width: 10px;
+}
+
+.text::-webkit-scrollbar-thumb{
+    background-image: url(../img/borda.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+/*Espaço para os personagens*/
+.personcaixa{
+    display: flex;
+    height: 150px;
+}
+
+/* Linka os personagens*/
+.personagem{
+    min-width: 145px;
+    min-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Imagem dos personagens*/
+.sprites{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.sprites:hover{
+    transform: scale(1.1);
+}
+
+.caixa2{
+    height: 500px;
+    width: 300px;
+    border: 2px solid black;
+    background-image: url(../img/caixahorizontal.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.infos{
+    width: 260px;
+    height: 460px;
+    margin: 20px auto auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.infos img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 55px;
+}
+
+.nomes{
+    width: 120px;
+    height: 21px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px auto auto;
+    margin-bottom: 20px;
+}
+
+.infos::-webkit-scrollbar{
+    width: 10px;
+}
+
+.infos::-webkit-scrollbar-thumb{
+    background-image: url(../img/borda.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
